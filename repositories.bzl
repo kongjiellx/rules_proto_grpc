@@ -7,7 +7,7 @@ load("//internal:common.bzl", "check_bazel_minimum_version")
 MINIMUM_BAZEL_VERSION = "3.0.0"
 ENABLE_VERSION_NAGS = False
 PROTOBUF_VERSION = "3.19.1"  # When updating, also update JS requirements, JS rulegen in js.go, Ruby requirements and C#/F# requirements
-GRPC_VERSION = "1.42.0"  # When updating, also update grpc hash, grpc-java hash, Go repositories.bzl, Ruby requirements and C#/F# requirements
+GRPC_VERSION = "1.42.1"  # When updating, also update grpc hash, grpc-java hash, Go repositories.bzl, Ruby requirements and C#/F# requirements
 VERSIONS = {
     # Core
     "rules_proto": {
@@ -26,10 +26,10 @@ VERSIONS = {
     },
     "com_github_grpc_grpc": {
         "type": "github",
-        "org": "grpc",
+        "org": "kongjiellx",
         "repo": "grpc",
         "ref": "v{}".format(GRPC_VERSION),
-        "sha256": "b2f2620c762427bfeeef96a68c1924319f384e877bc0e084487601e4cc6e434c",
+        "sha256": "ca676849f207b780b6e02b8e20f852947912419c287ea8afc63d13d8de8416b7",
     },
     "zlib": {
         "type": "http",
